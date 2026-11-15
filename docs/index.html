@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Apis.js — Documentation</title>
-<meta name="description" content="Apis.js: a compiler-based reactive UI framework. No virtual DOM, no shipped runtime framework — just compiled DOM operations.">
+<title>Hexwax — Documentation</title>
+<meta name="description" content="Hexwax: a compiler-based reactive UI framework. No virtual DOM, no shipped runtime framework — just compiled DOM operations.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" type="image/svg+xml" href="assets/logo-64.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -144,7 +144,7 @@
     color: var(--text);
     letter-spacing: -0.01em;
   }
-  .brand-logo { flex: none; height: 24px; width: auto; aspect-ratio: 300 / 130; }
+  .brand-logo { flex: none; height: 24px; width: auto; aspect-ratio: 440 / 120; }
   .brand small {
     font-family: var(--font-mono);
     font-weight: 500;
@@ -503,40 +503,24 @@
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
     </button>
     <a class="brand" href="#intro">
-      <svg class="brand-logo" viewBox="0 0 300 130" role="img" aria-label="Apis.js logo">
+      <svg class="brand-logo" viewBox="0 0 440 120" role="img" aria-label="Hexwax logo">
         <defs>
-          <linearGradient id="apisGoldNav" x1="30" y1="12" x2="35" y2="110" gradientUnits="userSpaceOnUse">
-            <stop offset="0" stop-color="#fdf1cf"/>
-            <stop offset="0.55" stop-color="#f3ae3d"/>
-            <stop offset="1" stop-color="#c5720f"/>
+          <linearGradient id="hxGoldNav" x1="45" y1="14" x2="75" y2="62" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#fdf1cf"/><stop offset="0.5" stop-color="#f3ae3d"/><stop offset="1" stop-color="#d98a1f"/>
           </linearGradient>
-          <linearGradient id="apisDarkNav" x1="80" y1="12" x2="90" y2="110" gradientUnits="userSpaceOnUse">
-            <stop offset="0" stop-color="#3d4350"/>
-            <stop offset="1" stop-color="#15110b"/>
+          <linearGradient id="hxAmberNav" x1="22" y1="52" x2="55" y2="100" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#e0932c"/><stop offset="1" stop-color="#8a4a0a"/>
           </linearGradient>
-          <linearGradient id="apisFoldNav" x1="14" y1="70" x2="40" y2="108" gradientUnits="userSpaceOnUse">
-            <stop offset="0" stop-color="#c5720f"/>
-            <stop offset="1" stop-color="#8a4a0a"/>
-          </linearGradient>
-          <linearGradient id="apisWingNav" x1="42" y1="82" x2="78" y2="98" gradientUnits="userSpaceOnUse">
-            <stop offset="0" stop-color="#f8c876"/>
-            <stop offset="1" stop-color="#e0932c"/>
-          </linearGradient>
-          <linearGradient id="apisDotNav" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0" stop-color="#fbe2a8"/>
-            <stop offset="1" stop-color="#d98a1f"/>
+          <linearGradient id="hxDarkNav" x1="66" y1="52" x2="97" y2="100" gradientUnits="userSpaceOnUse">
+            <stop class="d0" offset="0" stop-color="#3d4350"/><stop class="d1" offset="1" stop-color="#15110b"/>
           </linearGradient>
         </defs>
-        <path d="M60,10 L13,104 A13,13 0 0 0 39,102 Z" fill="url(#apisGoldNav)"/>
-        <path d="M42,72 L13,104 A13,13 0 0 0 39,102 L42,90 Z" fill="url(#apisFoldNav)" opacity="0.75"/>
-        <path d="M60,10 L81,102 A13,13 0 0 0 107,104 Z" fill="url(#apisDarkNav)"/>
-        <path d="M42,98 Q60,82 78,98 Q60,92 42,98 Z" fill="url(#apisWingNav)"/>
-        <text x="128" y="108" font-family="Archivo, sans-serif" font-weight="800" font-size="88" fill="currentColor">p</text>
-        <rect x="211" y="46" width="15" height="62" rx="3" fill="currentColor"/>
-        <polygon points="218.5,15 231,22 231,36 218.5,43 206,36 206,22" fill="url(#apisDotNav)"/>
-        <text x="234" y="108" font-family="Archivo, sans-serif" font-weight="800" font-size="88" fill="currentColor">s</text>
+        <polygon points="60.00,22.00 76.45,31.50 76.45,50.50 60.00,60.00 43.55,50.50 43.55,31.50" fill="url(#hxGoldNav)" stroke="url(#hxGoldNav)" stroke-width="4" stroke-linejoin="round"/>
+        <polygon points="38.50,60.00 54.95,69.50 54.95,88.50 38.50,98.00 22.05,88.50 22.05,69.50" fill="url(#hxAmberNav)" stroke="url(#hxAmberNav)" stroke-width="4" stroke-linejoin="round"/>
+        <polygon points="81.50,60.00 97.95,69.50 97.95,88.50 81.50,98.00 65.05,88.50 65.05,69.50" fill="url(#hxDarkNav)" stroke="url(#hxDarkNav)" stroke-width="4" stroke-linejoin="round"/>
+        <text x="134" y="92" font-family="Archivo, sans-serif" font-weight="800" font-size="84" letter-spacing="-2" fill="currentColor">hexwax</text>
       </svg>
-      <small>.js docs</small>
+      <small>docs</small>
     </a>
   </div>
   <div class="topbar-actions">
@@ -544,7 +528,7 @@
       <svg id="themeIconSun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
       <svg id="themeIconMoon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="display:none"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z"/></svg>
     </button>
-    <a class="gh-link" href="https://github.com/anupam42/apis" target="_blank" rel="noopener">
+    <a class="gh-link" href="https://github.com/anupam42/hexwax" target="_blank" rel="noopener">
       <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.9 5.3.9 11.6c0 5 3.3 9.3 7.8 10.8.6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.2-1.7-1.2-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 1.7 2.6 1.2 3.2.9.1-.7.4-1.2.7-1.5-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.4-2.3 1.1-3.2-.1-.3-.5-1.5.1-3.1 0 0 .9-.3 3 1.1a10.4 10.4 0 0 1 5.5 0c2.1-1.4 3-1.1 3-1.1.6 1.6.2 2.8.1 3.1.7.9 1.1 1.9 1.1 3.2 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.5-1.5 7.8-5.8 7.8-10.8C23.1 5.3 18.3.5 12 .5Z"/></svg>
       GitHub
     </a>
@@ -631,9 +615,9 @@
     <section id="intro" style="padding-top:0;">
       <div class="hero">
         <div class="hero-inner">
-          <span class="eyebrow" style="color:var(--accent)">Apis /ˈeɪpɪs/ · Latin, "bee" — small units, compiled into one efficient structure</span>
+          <span class="eyebrow" style="color:var(--accent)">Hexwax · the hexagonal wax cells of a honeycomb — small units, built into one efficient structure</span>
           <h1>A UI compiler that<br><em>disappears</em> at build time.</h1>
-          <p class="lede">Apis.js components are single files of standard HTML, CSS and JavaScript. There's no virtual DOM and no framework runtime shipped to the browser — the compiler reads your component once and writes out the plain DOM calls that would have been tedious to hand-write.</p>
+          <p class="lede">Hexwax components are single files of standard HTML, CSS and JavaScript. There's no virtual DOM and no framework runtime shipped to the browser — the compiler reads your component once and writes out the plain DOM calls that would have been tedious to hand-write.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#quick-example">See it compile ↓</a>
             <a class="btn btn-ghost" href="#anatomy">Read the docs</a>
@@ -656,7 +640,7 @@
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
             </div>
             <div class="pane">
-              <div class="pane-label">Apis.js compiles to</div>
+              <div class="pane-label">Hexwax compiles to</div>
               <pre><code data-lang="js">export default $runtime.makeComponent($option =&gt; {
   const $$apply = $runtime.makeApply();
   let name = 'world';
@@ -694,7 +678,7 @@
       <div class="code-file">
         <div class="file-name">Counter.xht</div>
         <pre><code data-lang="html">&lt;script&gt;
-  import { writable } from 'apisjs/runtime.js';
+  import { writable } from 'hexwax/runtime.js';
 
   const count = writable(0);
   let visible = true;
@@ -731,7 +715,7 @@
         </tbody>
       </table>
       <p>Compile a source string programmatically with <code>compile(source, config)</code>:</p>
-      <pre><code data-lang="js">import { compile } from 'apisjs';
+      <pre><code data-lang="js">import { compile } from 'hexwax';
 
 const ctx = await compile(componentSource, { cssGenId: () =&gt; `c${id++}` });
 ctx.result;     // compiled JS module, as a string
@@ -743,16 +727,16 @@ ctx.css.result; // extracted, scoped CSS, if any</code></pre>
       <p>In practice you don't call <code>compile()</code> by hand — a bundler plugin does it as part of your build.</p>
       <div class="code-file">
         <div class="file-name">rollup.config.js</div>
-        <pre><code data-lang="js">import apis from 'apisjs/apis-rollup.js';
+        <pre><code data-lang="js">import hexwax from 'hexwax/hexwax-rollup.js';
 
 export default {
   input: 'src/main.js',
   plugins: [
-    apis({ extension: ['xht', 'html'] })
+    hexwax({ extension: ['xht', 'html'] })
   ]
 };</code></pre>
       </div>
-      <p>An esbuild-based dev workflow (<code>apis-esbuild.js</code>) is also included, with optional live-reload via an <code>esbuild.config.js</code>/<code>derver.config.js</code> pair in your project root.</p>
+      <p>An esbuild-based dev workflow (<code>hexwax-esbuild.js</code>) is also included, with optional live-reload via an <code>esbuild.config.js</code>/<code>derver.config.js</code> pair in your project root.</p>
     </section>
 
     <section id="interpolation">
@@ -840,7 +824,7 @@ export default {
       <h2>Transitions</h2>
       <p><code>transition:</code> plays both ways; <code>in:</code>/<code>out:</code> play one direction only. Four built-ins ship in the runtime: <code>fade</code>, <code>fly</code>, <code>scale</code>, <code>slide</code> — each is a plain function returning <code>{ duration, delay, easing, css }</code>, so writing your own is the same shape.</p>
       <pre><code data-lang="html">&lt;script&gt;
-  import { fade, fly } from 'apisjs/runtime.js';
+  import { fade, fly } from 'hexwax/runtime.js';
   let visible = true;
 &lt;/script&gt;
 
@@ -882,7 +866,7 @@ $: if (count &gt; 10) console.log('big!');</code></pre>
       <p>Any imported value with a <code>.subscribe(fn)</code> method is auto-subscribed by the compiler — subscribing re-runs the component's digest whenever the store notifies. <code>writable</code>/<code>readable</code>/<code>derived</code> implement that contract so you don't hand-roll it.</p>
       <div class="code-file">
         <div class="file-name">store.js</div>
-        <pre><code data-lang="js">import { writable, derived } from 'apisjs/runtime.js';
+        <pre><code data-lang="js">import { writable, derived } from 'hexwax/runtime.js';
 
 export const count = writable(0);
 export const doubled = derived(count, n =&gt; n * 2);</code></pre>
@@ -985,7 +969,7 @@ $tick().then(() =&gt; console.log('DOM has been updated'));</code></pre>
     </section>
 
     <footer>
-      Apis.js is a clean-room implementation, architecturally inspired by <a href="https://github.com/malinajs/malinajs" target="_blank" rel="noopener">malina.js</a>. MIT licensed.
+      Hexwax is a clean-room implementation, architecturally inspired by <a href="https://github.com/malinajs/malinajs" target="_blank" rel="noopener">malina.js</a>. MIT licensed.
     </footer>
   </main>
 </div>
@@ -994,7 +978,7 @@ $tick().then(() =&gt; console.log('DOM has been updated'));</code></pre>
   // ---------- theme ----------
   (function () {
     const root = document.documentElement;
-    const stored = localStorage.getItem('apisjs-theme');
+    const stored = localStorage.getItem('hexwax-theme');
     if (stored) root.setAttribute('data-theme', stored);
 
     function syncIcon() {
@@ -1011,7 +995,7 @@ $tick().then(() =&gt; console.log('DOM has been updated'));</code></pre>
         || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
       const next = current === 'dark' ? 'light' : 'dark';
       root.setAttribute('data-theme', next);
-      localStorage.setItem('apisjs-theme', next);
+      localStorage.setItem('hexwax-theme', next);
       syncIcon();
     });
   })();

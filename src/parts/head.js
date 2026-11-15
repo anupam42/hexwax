@@ -5,7 +5,7 @@ import { xNode } from '../xnode.js';
 export function attachHead(n) {
   if (n.elArg == 'window' || n.elArg == 'body') {
     let name = 'el' + (this.uniqIndex++);
-    let block = this.buildBlock({ body: [n] }, { apisElement: true, inline: true, oneElement: name, bindAttributes: true });
+    let block = this.buildBlock({ body: [n] }, { hexwaxElement: true, inline: true, oneElement: name, bindAttributes: true });
     if (block.source) {
       return xNode('attach-head', {
         name,
@@ -55,7 +55,7 @@ export function attachHead(n) {
       this.require('$onDestroy');
     }
 
-    const result = xNode('apis:head', d, (ctx, n) => {
+    const result = xNode('hexwax:head', d, (ctx, n) => {
       if (n.title != null) ctx.writeLine(`document.title = ${n.title};`);
       if (n.dynTitle) {
         if (this.inuse.apply) {

@@ -1,13 +1,13 @@
 
-import * as apis from 'apisjs/apis.mjs';
+import * as hexwax from 'hexwax/hexwax.mjs';
 
-export default function apisRollup(option = {}) {
-    if(option.displayVersion !== false) console.log('! Apis.js', apis.version);
+export default function hexwaxRollup(option = {}) {
+    if(option.displayVersion !== false) console.log('! Hexwax', hexwax.version);
     if(!option.extension) option.extension = ['html', 'ma', 'xht'];
     let content_cache = {};
 
     return {
-        name: 'apis',
+        name: 'hexwax',
         async transform(code, id) {
             if(!option.extension.some(ext => id.endsWith('.' + ext))) return null;
             let result;
@@ -17,7 +17,7 @@ export default function apisRollup(option = {}) {
                 name: id.match(/([^/\\]+)\.\w+$/)[1]
             });
             try {
-                let ctx = await apis.compile(code, opts);
+                let ctx = await hexwax.compile(code, opts);
                 result = ctx.result;
                 if(ctx.css.result) {
                     let name = id.replace(/[^\w.\-]/g, '') + '.css';
@@ -45,7 +45,7 @@ async function loadConfig(filename, option) {
   const fs = await import('fs');
   let localConfig, parts = filename.split(/[/\\]/);
   for(let i = parts.length - 1; i > 1; i--) {
-    let local = parts.slice(0, i).join('/') + '/apis.config.js';
+    let local = parts.slice(0, i).join('/') + '/hexwax.config.js';
     if(fs.existsSync(local)) {
       localConfig = local;
       break;

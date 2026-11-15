@@ -32,12 +32,12 @@ export function buildRuntime() {
   }));
 
   this.glob.$onMount.$handler = (ctx, n) => {
-    if (n.value) ctx.write(true, `import { $onMount } from 'apisjs/runtime.js';`);
+    if (n.value) ctx.write(true, `import { $onMount } from 'hexwax/runtime.js';`);
   };
   this.module.top.push(this.glob.$onMount);
 
   this.module.top.push(xNode('$onDestroy', (ctx) => {
-    if (this.inuse.$onDestroy) ctx.write(true, `import { $onDestroy } from 'apisjs/runtime.js';`);
+    if (this.inuse.$onDestroy) ctx.write(true, `import { $onDestroy } from 'hexwax/runtime.js';`);
   }));
 
   this.glob.apply.$handler = (ctx, n) => {
@@ -326,7 +326,7 @@ export function buildBlock(data, option = {}) {
         tpl.push(templateNode);
         labelRequest?.set(templateNode);
       } else if (n.type === 'node') {
-        if (n.name == 'apis' && !option.apisElement) {
+        if (n.name == 'hexwax' && !option.hexwaxElement) {
           let b;
           if (n.elArg == 'portal') b = this.attachPortal(n);
           else if (['window', 'body', 'head'].includes(n.elArg)) b = this.attachHead(n);

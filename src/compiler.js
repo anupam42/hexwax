@@ -164,8 +164,8 @@ export async function compile(source, config = {}) {
 
   use_context(ctx, function() {
     const root = xNode('root', (ctx) => {
-      ctx.write(true, `import * as $runtime from 'apisjs/runtime.js';`);
-      ctx.write(true, 'import { $watch, $watchCustom } from \'apisjs/runtime.js\';');
+      ctx.write(true, `import * as $runtime from 'hexwax/runtime.js';`);
+      ctx.write(true, 'import { $watch, $watchCustom } from \'hexwax/runtime.js\';');
       ctx.add(this.module.top);
       const componentFn = this.glob.componentFn;
 

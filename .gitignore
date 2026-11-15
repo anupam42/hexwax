@@ -4,10 +4,10 @@ node_modules/
 *.log
 
 # built output (run `npm run build` to regenerate)
-/apis.js
-/apis.js.map
-/apis.mjs
-/apis.mjs.map
+/hexwax.js
+/hexwax.js.map
+/hexwax.mjs
+/hexwax.mjs.map
 /runtime.js
 /runtime.js.map
 

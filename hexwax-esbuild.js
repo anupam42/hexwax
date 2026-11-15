@@ -1,5 +1,5 @@
 const { build } = require('esbuild');
-const apis = require('apisjs');
+const hexwax = require('hexwax');
 const fsp = require('fs/promises');
 const fs = require('fs');
 const path = require('path');
@@ -50,21 +50,21 @@ if(!module.parent){
 // Module
 
 module.exports = {
-    apisPlugin,
+    hexwaxPlugin,
     esbuild
 }
 
-function apisPlugin(options={}){
+function hexwaxPlugin(options={}){
 
     const cssModules = new Map();
 
-    if(options.displayVersion !== false) console.log('! Apis.js', apis.version);
+    if(options.displayVersion !== false) console.log('! Hexwax', hexwax.version);
 
     return {
-        name: 'apis-plugin',
+        name: 'hexwax-plugin',
         setup(build) {
-            build.onResolve({ filter: /^apisjs$/ }, async (args) => {
-                const runtime = await build.resolve('apisjs/runtime.js', {resolveDir: args.resolveDir, kind: args.kind});
+            build.onResolve({ filter: /^hexwax$/ }, async (args) => {
+                const runtime = await build.resolve('hexwax/runtime.js', {resolveDir: args.resolveDir, kind: args.kind});
                 return {
                     path: runtime.path,
                     sideEffects: false
@@ -84,7 +84,7 @@ function apisPlugin(options={}){
 
                     let source = await fsp.readFile(args.path, 'utf8');
 
-                    let ctx = await apis.compile(source,{
+                    let ctx = await hexwax.compile(source,{
                         path: args.path,
                         name: args.path.match(/([^/\\]+)\.\w+$/)[1],
                         ...options
@@ -93,7 +93,7 @@ function apisPlugin(options={}){
                     let code = ctx.result;
                     
                     if(ctx.css.result){
-                        const cssPath = args.path.replace(/\.\w+$/, ".apis.css").replace(/\\/g, "/");
+                        const cssPath = args.path.replace(/\.\w+$/, ".hexwax.css").replace(/\\/g, "/");
                         cssModules.set(cssPath,ctx.css.result);
                         code += `\nimport "${cssPath}";`
                     }
@@ -102,11 +102,11 @@ function apisPlugin(options={}){
                 }
             );
 
-            build.onResolve({ filter: /\.apis\.css$/ }, ({ path }) => {
-                return { path, namespace: 'apiscss' }
+            build.onResolve({ filter: /\.hexwax\.css$/ }, ({ path }) => {
+                return { path, namespace: 'hexwaxcss' }
             })
 
-            build.onLoad({ filter: /\.apis\.css$/, namespace: 'apiscss' }, ({ path }) => {
+            build.onLoad({ filter: /\.hexwax\.css$/, namespace: 'hexwaxcss' }, ({ path }) => {
                 const css = cssModules.get(path);
                 return css ? { contents: css, loader: "css" } : null;
             })
@@ -121,7 +121,7 @@ async function esbuild(options={}){
         outfile: 'public/bundle.js',
         minify: true,
         bundle: true,
-        plugins: [apisPlugin()],
+        plugins: [hexwaxPlugin()],
         ...esbuildConfig,
         ...options
     };

@@ -15,15 +15,15 @@ export default [{
 }, {
   input: './src/compiler.js',
   output: {
-    file: './apis.mjs',
+    file: './hexwax.mjs',
     format: 'es'
   },
   plugins: [resolve()]
 }, {
   input: './src/compiler.js',
   output: {
-    file: './apis.js',
-    name: 'apis',
+    file: './hexwax.js',
+    name: 'hexwax',
     format: 'umd'
   },
   plugins: [resolve()]

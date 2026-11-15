@@ -1,25 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 120 130" role="img" aria-label="Apis.js logo">
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 120 120" role="img" aria-label="Hexwax logo">
   <defs>
-    <linearGradient id="apisGold" x1="30" y1="12" x2="35" y2="110" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#fdf1cf"/>
-      <stop offset="0.55" stop-color="#f3ae3d"/>
-      <stop offset="1" stop-color="#c5720f"/>
+    <linearGradient id="hxGold" x1="45" y1="14" x2="75" y2="62" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fdf1cf"/><stop offset="0.5" stop-color="#f3ae3d"/><stop offset="1" stop-color="#d98a1f"/>
     </linearGradient>
-    <linearGradient id="apisDark" x1="80" y1="12" x2="90" y2="110" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#3d4350"/>
-      <stop offset="1" stop-color="#15110b"/>
+    <linearGradient id="hxAmber" x1="22" y1="52" x2="55" y2="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e0932c"/><stop offset="1" stop-color="#8a4a0a"/>
     </linearGradient>
-    <linearGradient id="apisFold" x1="14" y1="70" x2="40" y2="108" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#c5720f"/>
-      <stop offset="1" stop-color="#8a4a0a"/>
-    </linearGradient>
-    <linearGradient id="apisWing" x1="42" y1="82" x2="78" y2="98" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#f8c876"/>
-      <stop offset="1" stop-color="#e0932c"/>
+    <linearGradient id="hxDark" x1="66" y1="52" x2="97" y2="100" gradientUnits="userSpaceOnUse">
+      <stop class="d0" offset="0" stop-color="#3d4350"/><stop class="d1" offset="1" stop-color="#15110b"/>
     </linearGradient>
   </defs>
-  <path d="M60,10 L13,104 A13,13 0 0 0 39,102 Z" fill="url(#apisGold)"/>
-  <path d="M42,72 L13,104 A13,13 0 0 0 39,102 L42,90 Z" fill="url(#apisFold)" opacity="0.75"/>
-  <path d="M60,10 L81,102 A13,13 0 0 0 107,104 Z" fill="url(#apisDark)"/>
-  <path d="M42,98 Q60,82 78,98 Q60,92 42,98 Z" fill="url(#apisWing)"/>
+  <polygon points="60.00,22.00 76.45,31.50 76.45,50.50 60.00,60.00 43.55,50.50 43.55,31.50" fill="url(#hxGold)" stroke="url(#hxGold)" stroke-width="4" stroke-linejoin="round"/>
+  <polygon points="38.50,60.00 54.95,69.50 54.95,88.50 38.50,98.00 22.05,88.50 22.05,69.50" fill="url(#hxAmber)" stroke="url(#hxAmber)" stroke-width="4" stroke-linejoin="round"/>
+  <polygon points="81.50,60.00 97.95,69.50 97.95,88.50 81.50,98.00 65.05,88.50 65.05,69.50" fill="url(#hxDark)" stroke="url(#hxDark)" stroke-width="4" stroke-linejoin="round"/>
 </svg>

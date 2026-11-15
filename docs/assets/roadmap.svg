@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="1200" height="640" role="img" aria-labelledby="t d">
+<title id="t">Hexwax roadmap</title>
+<desc id="d">Five milestones: v0.1 Publishable (now), v0.2 Real apps, v0.3 SaaS-ready, v0.4 Full-stack, v1.0 Stable.</desc>
+<style>
+  .bg{fill:#fbf8f1} .card{fill:#ffffff;stroke:#ece5d3} .card.now{stroke:#e7a83a;stroke-width:1.5}
+  .h1{fill:#1c1712;font:700 28px -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Helvetica,Arial,sans-serif;letter-spacing:-.3px}
+  .sub{fill:#6b604c;font:400 15px -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Helvetica,Arial,sans-serif}
+  .ttl{fill:#1c1712;font:650 19px -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Helvetica,Arial,sans-serif}
+  .cap{fill:#7d715b;font:400 13px -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Helvetica,Arial,sans-serif}
+  .li{fill:#3a3120;font:400 13.5px -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Helvetica,Arial,sans-serif}
+  .pill{fill:#f5ecd9} .pilltx{fill:#8a5a12;font:700 12px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.4px}
+  .pill.now{fill:#e7a83a} .pilltx.now{fill:#1c1712}
+  .rule{stroke:#efe7d6} .dot{fill:#e7a83a} .dot.off{fill:#d9cdb3}
+  .track{stroke:#e3d9c2} .node{fill:#fbf8f1;stroke:#d2c4a6;stroke-width:2} .stem{stroke:#e3d9c2}
+  .lg{fill:#6b604c;font:500 13px -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Helvetica,Arial,sans-serif}
+  .chip{fill:#ffffff;stroke:#ece5d3} .chipk{fill:#1c1712;font:650 13.5px -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Helvetica,Arial,sans-serif}
+  .chipv{fill:#7d715b;font:400 13.5px -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Helvetica,Arial,sans-serif}
+  .lbl{fill:#a8996f;font:700 11.5px -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Helvetica,Arial,sans-serif;letter-spacing:1.2px}
+  @media (prefers-color-scheme: dark){
+    .bg{fill:#16120d} .card,.chip{fill:#1f1a13;stroke:#3a3120} .card.now{stroke:#e7a83a}
+    .h1,.ttl,.chipk{fill:#f5f1e6} .sub,.lg{fill:#b3a78f} .cap,.chipv{fill:#a3977e} .li{fill:#e3d9c2}
+    .pill{fill:#2c2418} .pilltx{fill:#f4c06b} .pill.now{fill:#e7a83a} .pilltx.now{fill:#16120d}
+    .rule{stroke:#2e271c} .dot.off{fill:#5a4d36} .track,.stem{stroke:#3a3120}
+    .node{fill:#16120d;stroke:#5a4d36} .lbl{fill:#8a7d62}
+  }
+</style>
+<defs>
+  <linearGradient id="prog" x1="0" x2="1"><stop offset="0" stop-color="#f4c06b"/><stop offset="1" stop-color="#c97a0a"/></linearGradient>
+  <filter id="sh" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#5a3a08" flood-opacity=".07"/></filter>
+</defs>
+<rect class="bg" width="1200" height="640" rx="20"/>
+<text class="h1" x="40" y="62">Hexwax roadmap</text>
+<text class="sub" x="40" y="90">From a publishable package to a framework you can build any SaaS app with</text>
+<circle cx="1000" cy="70" r="6" class="dot"/><text class="lg" x="1012" y="75">Now</text>
+<circle cx="1068" cy="70" r="5" class="node"/><text class="lg" x="1080" y="75">Planned</text>
+
+<line class="track" x1="135.0" y1="150" x2="1065.0" y2="150" stroke-width="3" stroke-linecap="round"/>
+<line x1="135.0" y1="150" x2="251.25" y2="150" stroke="url(#prog)" stroke-width="3" stroke-linecap="round"/>
+<line class="stem" x1="135.0" y1="160" x2="135.0" y2="192" stroke-width="2" stroke-dasharray="2 4" stroke-linecap="round"/>
+<circle cx="135.0" cy="150" r="15" fill="#e7a83a" opacity=".18"/><circle cx="135.0" cy="150" r="8" class="dot"/>
+<rect class="card now" x="29.0" y="192" width="212" height="300" rx="14" filter="url(#sh)"/>
+<rect class="pill now" x="47.0" y="210" width="96" height="22" rx="11"/>
+<text class="pilltx now" x="57.0" y="225">v0.1 · NOW</text>
+<text class="ttl" x="47.0" y="264">Publishable</text>
+<text class="cap" x="47.0" y="286">Package on npm</text>
+<line class="rule" x1="47.0" y1="304" x2="223.0" y2="304"/>
+<rect class="dot" x="48.0" y="326" width="7" height="7" rx="2"/>
+<text class="li" x="65.0" y="334">Test suite + CI</text>
+<rect class="dot" x="48.0" y="358" width="7" height="7" rx="2"/>
+<text class="li" x="65.0" y="366">ESM fixes + exports</text>
+<rect class="dot" x="48.0" y="390" width="7" height="7" rx="2"/>
+<text class="li" x="65.0" y="398">Vite plugin</text>
+<rect class="dot" x="48.0" y="422" width="7" height="7" rx="2"/>
+<text class="li" x="65.0" y="430">hexwax dev / build CLI</text>
+<rect class="dot" x="48.0" y="454" width="7" height="7" rx="2"/>
+<text class="li" x="65.0" y="462">create-hexwax scaffolder</text>
+<line class="stem" x1="367.5" y1="160" x2="367.5" y2="192" stroke-width="2" stroke-dasharray="2 4" stroke-linecap="round"/>
+<circle cx="367.5" cy="150" r="7" class="node"/>
+<rect class="card" x="261.5" y="192" width="212" height="300" rx="14" filter="url(#sh)"/>
+<rect class="pill" x="279.5" y="210" width="50" height="22" rx="11"/>
+<text class="pilltx" x="289.5" y="225">v0.2</text>
+<text class="ttl" x="279.5" y="264">Real apps</text>
+<text class="cap" x="279.5" y="286">Routing, data, forms</text>
+<line class="rule" x1="279.5" y1="304" x2="455.5" y2="304"/>
+<rect class="dot off" x="280.5" y="326" width="7" height="7" rx="2"/>
+<text class="li" x="297.5" y="334">File-based router</text>
+<rect class="dot off" x="280.5" y="358" width="7" height="7" rx="2"/>
+<text class="li" x="297.5" y="366">Data fetching + cache</text>
+<rect class="dot off" x="280.5" y="390" width="7" height="7" rx="2"/>
+<text class="li" x="297.5" y="398">Forms + validation</text>
+<rect class="dot off" x="280.5" y="422" width="7" height="7" rx="2"/>
+<text class="li" x="297.5" y="430">Testing utilities</text>
+<rect class="dot off" x="280.5" y="454" width="7" height="7" rx="2"/>
+<text class="li" x="297.5" y="462">HMR + error overlay</text>
+<line class="stem" x1="600.0" y1="160" x2="600.0" y2="192" stroke-width="2" stroke-dasharray="2 4" stroke-linecap="round"/>
+<circle cx="600.0" cy="150" r="7" class="node"/>
+<rect class="card" x="494.0" y="192" width="212" height="300" rx="14" filter="url(#sh)"/>
+<rect class="pill" x="512.0" y="210" width="50" height="22" rx="11"/>
+<text class="pilltx" x="522.0" y="225">v0.3</text>
+<text class="ttl" x="512.0" y="264">SaaS-ready</text>
+<text class="cap" x="512.0" y="286">Starter, auth, UI</text>
+<line class="rule" x1="512.0" y1="304" x2="688.0" y2="304"/>
+<rect class="dot off" x="513.0" y="326" width="7" height="7" rx="2"/>
+<text class="li" x="530.0" y="334">saas-starter template</text>
+<rect class="dot off" x="513.0" y="358" width="7" height="7" rx="2"/>
+<text class="li" x="530.0" y="366">Auth, roles, tenants</text>
+<rect class="dot off" x="513.0" y="390" width="7" height="7" rx="2"/>
+<text class="li" x="530.0" y="398">@hexwax/ui primitives</text>
+<rect class="dot off" x="513.0" y="422" width="7" height="7" rx="2"/>
+<text class="li" x="530.0" y="430">Theming + dark mode</text>
+<rect class="dot off" x="513.0" y="454" width="7" height="7" rx="2"/>
+<text class="li" x="530.0" y="462">Stripe + deploy recipes</text>
+<line class="stem" x1="832.5" y1="160" x2="832.5" y2="192" stroke-width="2" stroke-dasharray="2 4" stroke-linecap="round"/>
+<circle cx="832.5" cy="150" r="7" class="node"/>
+<rect class="card" x="726.5" y="192" width="212" height="300" rx="14" filter="url(#sh)"/>
+<rect class="pill" x="744.5" y="210" width="50" height="22" rx="11"/>
+<text class="pilltx" x="754.5" y="225">v0.4</text>
+<text class="ttl" x="744.5" y="264">Full-stack</text>
+<text class="cap" x="744.5" y="286">Server, SEO, i18n</text>
+<line class="rule" x1="744.5" y1="304" x2="920.5" y2="304"/>
+<rect class="dot off" x="745.5" y="326" width="7" height="7" rx="2"/>
+<text class="li" x="762.5" y="334">SSR + static generation</text>
+<rect class="dot off" x="745.5" y="358" width="7" height="7" rx="2"/>
+<text class="li" x="762.5" y="366">API routes</text>
+<rect class="dot off" x="745.5" y="390" width="7" height="7" rx="2"/>
+<text class="li" x="762.5" y="398">SEO helpers</text>
+<rect class="dot off" x="745.5" y="422" width="7" height="7" rx="2"/>
+<text class="li" x="762.5" y="430">i18n + RTL</text>
+<rect class="dot off" x="745.5" y="454" width="7" height="7" rx="2"/>
+<text class="li" x="762.5" y="462">Observability hooks</text>
+<line class="stem" x1="1065.0" y1="160" x2="1065.0" y2="192" stroke-width="2" stroke-dasharray="2 4" stroke-linecap="round"/>
+<circle cx="1065.0" cy="150" r="7" class="node"/>
+<rect class="card" x="959.0" y="192" width="212" height="300" rx="14" filter="url(#sh)"/>
+<rect class="pill" x="977.0" y="210" width="50" height="22" rx="11"/>
+<text class="pilltx" x="987.0" y="225">v1.0</text>
+<text class="ttl" x="977.0" y="264">Stable</text>
+<text class="cap" x="977.0" y="286">Tools, docs, API freeze</text>
+<line class="rule" x1="977.0" y1="304" x2="1153.0" y2="304"/>
+<rect class="dot off" x="978.0" y="326" width="7" height="7" rx="2"/>
+<text class="li" x="995.0" y="334">VS Code extension</text>
+<rect class="dot off" x="978.0" y="358" width="7" height="7" rx="2"/>
+<text class="li" x="995.0" y="366">Typed components</text>
+<rect class="dot off" x="978.0" y="390" width="7" height="7" rx="2"/>
+<text class="li" x="995.0" y="398">Devtools</text>
+<rect class="dot off" x="978.0" y="422" width="7" height="7" rx="2"/>
+<text class="li" x="995.0" y="430">Docs + playground</text>
+<rect class="dot off" x="978.0" y="454" width="7" height="7" rx="2"/>
+<text class="li" x="995.0" y="462">Stable API (semver)</text>
+<text class="lbl" x="40" y="548">BUILT IN THREE LAYERS</text>
+<rect class="chip" x="40" y="564" width="241" height="40" rx="20"/>
+<text x="60" y="589"><tspan class="chipk">Core</tspan><tspan class="chipv" dx="8">hexwax compiler + runtime</tspan></text>
+<rect class="chip" x="293" y="564" width="385" height="40" rx="20"/>
+<text x="313" y="589"><tspan class="chipk">Official packages</tspan><tspan class="chipv" dx="8">@hexwax/router, query, forms, ui</tspan></text>
+<rect class="chip" x="690" y="564" width="290" height="40" rx="20"/>
+<text x="710" y="589"><tspan class="chipk">Recipes</tspan><tspan class="chipv" dx="8">Stripe, Auth, Sentry, PostHog</tspan></text>
+</svg>

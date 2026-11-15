@@ -1,10 +1,9 @@
 {
-  "name": "apisjs",
+  "name": "hexwax",
   "version": "0.0.1",
   "description": "Compiler-based reactive UI framework for building fast, ultra-light web apps with no runtime framework, using standard HTML, CSS, and JavaScript.",
   "keywords": [
-    "apis",
-    "apisjs",
+    "hexwax",
     "compiler",
     "reactive",
     "ui-framework",
@@ -31,11 +30,11 @@
   "type": "module",
   "main": "runtime.js",
   "files": [
-    "apis.mjs",
-    "apis.js",
+    "hexwax.mjs",
+    "hexwax.js",
     "runtime.js",
-    "apis-rollup.js",
-    "apis-esbuild.js",
+    "hexwax-rollup.js",
+    "hexwax-esbuild.js",
     "plugins/sass.js",
     "plugins/static-text.js"
   ]

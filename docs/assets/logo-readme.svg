@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Hexwax logo">
+  <style>
+    @media (prefers-color-scheme: dark) {
+      .d0 { stop-color: #aab2c2; }
+      .d1 { stop-color: #5b6372; }
+    }
+  </style>
+  <defs>
+    <linearGradient id="hxGold" x1="45" y1="14" x2="75" y2="62" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fdf1cf"/><stop offset="0.5" stop-color="#f3ae3d"/><stop offset="1" stop-color="#d98a1f"/>
+    </linearGradient>
+    <linearGradient id="hxAmber" x1="22" y1="52" x2="55" y2="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e0932c"/><stop offset="1" stop-color="#8a4a0a"/>
+    </linearGradient>
+    <linearGradient id="hxDark" x1="66" y1="52" x2="97" y2="100" gradientUnits="userSpaceOnUse">
+      <stop class="d0" offset="0" stop-color="#3d4350"/><stop class="d1" offset="1" stop-color="#15110b"/>
+    </linearGradient>
+  </defs>
+  <polygon points="60.00,22.00 76.45,31.50 76.45,50.50 60.00,60.00 43.55,50.50 43.55,31.50" fill="url(#hxGold)" stroke="url(#hxGold)" stroke-width="4" stroke-linejoin="round"/>
+  <polygon points="38.50,60.00 54.95,69.50 54.95,88.50 38.50,98.00 22.05,88.50 22.05,69.50" fill="url(#hxAmber)" stroke="url(#hxAmber)" stroke-width="4" stroke-linejoin="round"/>
+  <polygon points="81.50,60.00 97.95,69.50 97.95,88.50 81.50,98.00 65.05,88.50 65.05,69.50" fill="url(#hxDark)" stroke="url(#hxDark)" stroke-width="4" stroke-linejoin="round"/>
+</svg>
