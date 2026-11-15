@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="272" viewBox="0 0 680 272" role="img" aria-label="Hexwax">
+<style>
+.ink{fill:none;stroke:#1d1915;stroke-width:15;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:3}
+.gold{fill:none;stroke:#f5a91c;stroke-width:15;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:3}
+.cell{fill:#f5a91c;stroke:none} .gold-cell{fill:#1d1915}
+.wing{fill:#fcd58a}
+.trail{fill:none;stroke:#e9b860;stroke-width:2.4;stroke-linecap:round;stroke-dasharray:3 5}
+.ink{stroke:#f4efe6}.gold-cell{fill:#f4efe6}
+@media (prefers-reduced-motion:no-preference){
+ .draw{stroke-dasharray:1;animation:draw .55s cubic-bezier(.6,0,.2,1) both}
+ .cell{transform-box:fill-box;transform-origin:center;animation:pop .45s cubic-bezier(.3,1.6,.5,1) both}
+ .hover{animation:hover 3.2s ease-in-out infinite}
+ .wing{transform-box:fill-box;animation:flap .16s ease-in-out infinite alternate}
+ .wl{transform-origin:100% 80%} .wr{transform-origin:0% 80%}
+ .trail{animation:flow 1.4s linear infinite}
+}
+@keyframes draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes pop{0%{transform:scale(0) rotate(-60deg)}100%{transform:scale(1) rotate(0)}}
+@keyframes hover{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+@keyframes flap{from{transform:scaleY(1)}to{transform:scaleY(.72)}}
+@keyframes flow{to{stroke-dashoffset:-16}}
+</style>
+<g transform="translate(14 34) scale(1.68)">
+<defs><clipPath id="bnBody"><path d="M91.18,84.00 Q91.18,90.00 85.98,93.00 L65.20,105.00 Q60.00,108.00 54.80,105.00 L34.02,93.00 Q28.82,90.00 28.82,84.00 L28.82,60.00 Q28.82,54.00 34.02,51.00 L54.80,39.00 Q60.00,36.00 65.20,39.00 L85.98,51.00 Q91.18,54.00 91.18,60.00Z"/></clipPath></defs>
+<path class="trail" d="M54,112 C44,130 20,128 22,114 C24,100 44,108 34,124 C28,134 14,138 4,136" pathLength="100"/>
+<g class="hover">
+<path class="wing wl" d="M37.86,49.50 Q37.86,53.00 34.83,54.75 L27.03,59.25 Q24.00,61.00 20.97,59.25 L13.17,54.75 Q10.14,53.00 10.14,49.50 L10.14,40.50 Q10.14,37.00 13.17,35.25 L20.97,30.75 Q24.00,29.00 27.03,30.75 L34.83,35.25 Q37.86,37.00 37.86,40.50Z"/>
+<path class="wing wr" d="M109.86,49.50 Q109.86,53.00 106.83,54.75 L99.03,59.25 Q96.00,61.00 92.97,59.25 L85.17,54.75 Q82.14,53.00 82.14,49.50 L82.14,40.50 Q82.14,37.00 85.17,35.25 L92.97,30.75 Q96.00,29.00 99.03,30.75 L106.83,35.25 Q109.86,37.00 109.86,40.50Z"/>
+<path d="M91.18,84.00 Q91.18,90.00 85.98,93.00 L65.20,105.00 Q60.00,108.00 54.80,105.00 L34.02,93.00 Q28.82,90.00 28.82,84.00 L28.82,60.00 Q28.82,54.00 34.02,51.00 L54.80,39.00 Q60.00,36.00 65.20,39.00 L85.98,51.00 Q91.18,54.00 91.18,60.00Z" fill="#f5a91c"/>
+<g clip-path="url(#bnBody)" fill="#1d1915">
+<rect x="20" y="63" width="80" height="8.5"/>
+<rect x="20" y="80" width="80" height="8.5"/>
+</g>
+<path d="M69.53,24.50 Q69.53,27.50 66.93,29.00 L62.60,31.50 Q60.00,33.00 57.40,31.50 L53.07,29.00 Q50.47,27.50 50.47,24.50 L50.47,19.50 Q50.47,16.50 53.07,15.00 L57.40,12.50 Q60.00,11.00 62.60,12.50 L66.93,15.00 Q69.53,16.50 69.53,19.50Z" fill="#c9780a"/>
+</g>
+</g>
+<g transform="translate(250 56) scale(1.15)">
+<clipPath id="capband"><rect x="-20" y="-7.5" width="340" height="85"/></clipPath>
+<g clip-path="url(#capband)">
+<path class="ink draw" style="animation-delay:0.35s" transform="translate(0 0)" d="M0,0 V70" pathLength="1"/>
+<path class="ink draw" style="animation-delay:0.49s" transform="translate(0 0)" d="M40,0 V70" pathLength="1"/>
+<path class="ink draw" style="animation-delay:0.63s" transform="translate(0 0)" d="M0,35 H40" pathLength="1"/>
+<path class="ink draw" style="animation-delay:0.77s" transform="translate(74 0)" d="M38,0 H0 V70 H38" pathLength="1"/>
+<path class="ink draw" style="animation-delay:0.91s" transform="translate(74 0)" d="M0,35 H30" pathLength="1"/>
+<path class="ink draw" style="animation-delay:1.05s" transform="translate(146 0)" d="M-6.6,-10 L52.6,80" pathLength="1"/>
+<path class="ink draw" style="animation-delay:1.19s" transform="translate(146 0)" d="M52.6,-10 L-6.6,80" pathLength="1"/>
+<path class="cell ink-cell" style="animation-delay:1.43s" d="M180.26,38.50 Q180.26,41.50 177.66,43.00 L171.60,46.50 Q169.00,48.00 166.40,46.50 L160.34,43.00 Q157.74,41.50 157.74,38.50 L157.74,31.50 Q157.74,28.50 160.34,27.00 L166.40,23.50 Q169.00,22.00 171.60,23.50 L177.66,27.00 Q180.26,28.50 180.26,31.50Z"/>
+</g>
+<g transform="translate(70 102)"><g clip-path="url(#capband)">
+<path class="gold draw" style="animation-delay:1.38s" transform="translate(0 0)" d="M-2.2,-11.8 L13,70 L30,20 L47,70 L62.2,-11.8" pathLength="1"/>
+<path class="gold draw" style="animation-delay:1.52s" transform="translate(94 0)" d="M-4,81.3 L25,0 L54,81.3" pathLength="1"/>
+<path class="gold draw" style="animation-delay:1.66s" transform="translate(94 0)" d="M10,48 H40" pathLength="1"/>
+<path class="gold draw" style="animation-delay:1.80s" transform="translate(178 0)" d="M-6.6,-10 L52.6,80" pathLength="1"/>
+<path class="gold draw" style="animation-delay:1.94s" transform="translate(178 0)" d="M52.6,-10 L-6.6,80" pathLength="1"/>
+<path class="cell gold-cell" style="animation-delay:2.18s" d="M212.26,38.50 Q212.26,41.50 209.66,43.00 L203.60,46.50 Q201.00,48.00 198.40,46.50 L192.34,43.00 Q189.74,41.50 189.74,38.50 L189.74,31.50 Q189.74,28.50 192.34,27.00 L198.40,23.50 Q201.00,22.00 203.60,23.50 L209.66,27.00 Q212.26,28.50 212.26,31.50Z"/>
+</g></g>
+</g>
+</svg>

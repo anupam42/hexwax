@@ -1,8 +1,9 @@
 <p align="center">
-  <img src="docs/assets/logo-readme.svg" alt="Hexwax logo" width="120">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/assets/banner-dark.svg">
+    <img src="docs/assets/banner-light.svg" alt="Hexwax" width="560">
+  </picture>
 </p>
-
-<h1 align="center">Hexwax</h1>
 
 <p align="center">
   <b>A UI compiler that disappears at build time.</b><br>
@@ -35,6 +36,12 @@ to the browser is your app — not a framework.
 > **The name.** *Hexwax* is the hexagonal wax of a honeycomb. Bees build one of nature's
 > most efficient structures out of small, identical cells — that's the idea: small
 > components, compiled into one efficient app, with nothing extra left over.
+>
+> **The logo** is a bee built only from hexagon cells — head, body and wings. Small, identical
+> pieces that together make something that works. Logo files live in
+> [`docs/assets/`](docs/assets/): `logo.svg` (mark), `logo-wordmark.svg` (mark + name),
+> `banner-light.svg` / `banner-dark.svg` (the animated README header), and `logo-64.svg` / `logo-48.svg` for favicons
+> and small sizes.
 
 ## Why Hexwax, when there are already so many frameworks?
 
@@ -284,6 +291,8 @@ Work through the phases in order; each phase should leave `main` releasable.
 ### Phase 1 — Package metadata
 - [x] Rename project Apis.js → **Hexwax** in code, package name, template tags
   (`<hexwax:head>` etc.), docs site, logo and readme (2026-11-15)
+- [x] New brand mark: a geometric bee made of hexagon cells, flat colours that work on light
+  and dark backgrounds; added `logo-wordmark.svg` and updated the docs header (2026-11-15)
 - [x] Rename the GitHub repo `anupam42/apis` → `anupam42/hexwax` (GitHub keeps redirects),
   then update the repo / GitHub Pages URLs in this readme and `docs/index.html`
 - [ ] Create the `hexwax` organization on npmjs.com to reserve the `@hexwax/*` scope
